@@ -1,0 +1,74 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: myDebug", // 디버그 이름
+            "type": "python", // 프로그래밍 언어
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4${pathSeparator}train.py", 
+            //어떤 파일을 실행시킬 지. 내가 지금 있는 곳=workspaceFolder=SELF_CODING. $[pathSeparactor]은 Mac은 / Window는 \\ 맞춰서 적용.
+            "console": "integratedTerminal", //터미널 불러온다는 뜻 
+            "justMyCode": false, //디버그모드에서 관리하는 코드의 범위가 외부의 패키지도 포함할 지 말지
+            "cwd": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4", 
+            //기본세팅으로 두면, SELF_CODING에서 /Month_1/WeekEnd/Week4/train.py에 있는 파일을 불러다 실행하는 것.
+            //이 수업의 특성상, 매 주차에 해당하는 폴더로 cwd를 옮겨서, 그 폴더 내에서 실행하는 것으로 하겠습니다. (overwrite 방지)
+            //보통은 애초에 VSCODE에서 Week4를 바로 열었을테니 이걸 기본 세팅대로 써도 지금 하는 것과 동일하게 반영 됨
+            "env": {"CUDA_VISIBLE_DEVICES":"0"}, // env는 환경변수. CUDA_VISIBLE_DEVICES : "0" -> 0번째의 GPU 1개만 사용한다는 의미
+            // "args": [
+            //     "--arg1", "arg1_value",
+            //     "--arg2", "arg2_value",
+            // ] //주석 단축키 cmd+/
+        },
+        {
+            "name": "Python: debug1", 
+            "type": "python", 
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4${pathSeparator}debug1.py", 
+            // 여기를 변경
+            "console": "integratedTerminal", 
+            "justMyCode": false, 
+            "cwd": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4", 
+            // Month 1 Week 4
+            "env": {"CUDA_VISIBLE_DEVICES":"0"}, 
+            // "args": [
+            //     "--arg1", "arg1_value",
+            //     "--arg2", "arg2_value",
+            // ] //주석 단축키 cmd+/
+        },
+        {
+            "name": "Python : debug2", 
+            "type": "python", 
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4${pathSeparator}debug2.py", 
+            // 여기를 변경
+            "console": "integratedTerminal", 
+            "justMyCode": false, 
+            "cwd": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4", 
+            // Month 1 Week 4
+            "env": {"CUDA_VISIBLE_DEVICES":"0"}, 
+            // "args": [
+            //     "--arg1", "arg1_value",
+            //     "--arg2", "arg2_value",
+            // ] //주석 단축키 cmd+/
+        },
+        {
+            "name": "Python : homework", 
+            "type": "python", 
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4${pathSeparator}homework.py", 
+            // 여기를 변경
+            "console": "integratedTerminal", 
+            "justMyCode": false, 
+            "cwd": "${workspaceFolder}${pathSeparator}Month_1${pathSeparator}WeekEnd${pathSeparator}Week4", 
+            // Month 1 Week 4
+            "env": {"CUDA_VISIBLE_DEVICES":"0"}, 
+            // "args": [
+            //     "--arg1", "arg1_value",
+            //     "--arg2", "arg2_value",
+            // ] //주석 단축키 cmd+/
+        }
+    ]
+}
